@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accordian & Type Prototype</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $( function() {
+    $( "#tabs" ).tabs();
+	$( "#accordion-1, #accordion-2" ).accordion({
+		collapsible: true,
+		heightStyle: "content",
+		active: false
+	});
+
+	$('.accordion-container h3').on('click', function(){
+		$('.accordion-container').not($(this).parent('.accordion-container')).accordion('option', {active: false});
+	})
+
+  } );
+
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav>
+		<div id="navbar"></div>
+
+		<div id="subnav">
+			<div id="title">
+				<p>Admissions</p>
+				<h2>Visit</h2>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+	<h1>SVA represents one of the most influential artistic communities in the world.</h1>
+	<p>SVA encourages all students to visit SVA before applying. Please see below for information on events and open houses. For students who cannot make it to New York City, SVA also participates in regional Info Nights and portfolio days.</p>
+	</header>
+
+	<div id="tabs">
+		<ul>
+		    <li class="tab1"><a href="#tabs-1">Undergradute</a></li>
+		    <li class="tab2"><a href="#tabs-2">Graduate</a></li>
+		    <li class="tab3"><a href="#tabs-3">International</a></li>
+	  	</ul>
+
+  			<div id="tabs-1">
+			    <h2>ON CAMPUS</h2>
+				    <div id="accordion-1" class="accordion-container">
+						<h3>Campus Tours</h3>
+							<div>
+								<p>Undergraduate tours are offered on weekdays throughout the year and are primarily conducted by students. It is recommended that tours be scheduled at least two to four weeks in advance of the desired date. Tours are scheduled to view either the east or west side of campus. Housing tours are offered separately, Monday-Friday from 12pm-2pm. <i>All tours start within Admissions located at 209 East 23rd Street.</i></p>
+								<p><b>REGISTER</b></p>
+								<p>If you are a high school, college or portfolio prep program and wish to schedule a <b>group tour</b>, please email us at admissions@sva.edu.</p>
+								<p>Directions and Hotel Recommendations can be found here.</p>
+								<p>For information on Graduate Department tours, please click here.</p>
+				  			</div>
+				  		<h3>Class Visit</h3>
+				 			<div>
+				    			<p>Accepted undergraduate students are invited to experience the class setting first-hand by visiting an SVA class during the spring semester. Class audits are available within Advertising, Animation (traditional), Design, Film, Fine Arts, Interior Design and Photography and Video.</p>
+				    			<p>Class audit offerings range from Digital Sculpture, Acting for Film, Designing Interiors and more. <b>To receive a full list of available courses and to register, email admissions@sva.edu.</b></p>
+				  			</div>
+				  		<h3>Open Houses</h3>
+				  			<div>
+				    			<p>On three dates in the fall, prospective undergraduate students and their families have an opportunity to meet with the president of the College, the chair of each undergraduate department being showcased that day, current SVA students, and members of the administrative staff.</p>
+				    			<p><i>Prospective students who attend an SVA Open House event will receive an application fee waiver if they apply for Early Action by December 1st.</i></p>
+				    			<p>All undergraduate Open House events have passed. If you were unable to join us for an Open House, please consider joining us for a campus tour or an upcoming campus event.</p>
+				  			</div>
+				  		<h3>SVA Portfolio Days</h3>
+				  			<div>
+				   				<p>SVA Portfolio Days are unique, on-campus events devoted to portfolio development. Prospective undergraduate students will have the opportunity to view a special presentation on Portfolio Development and meet with an admissions representative for a one-on-one portfolio interview. During our presentation, we will give you tips and show you examples of how to best prepare your portfolio for admission and merit scholarship consideration. The portfolio review is optional, but is a great opportunity to show us your sketchbooks and works in progress to get personalized feedback as you prepare your portfolio and application. <b>Campus tours will not be available on SVA Portfolio Days.</b></p>
+				   				<p><i>Prospective students who attend an SVA Portfolio Day event will receive an application fee waiver if they apply for Early Action by December 1st.</i></p>
+				   				<p>All SVA Portfolio Day events have passed. If you were unable to join us, please consider joining us for an on-campus portfolio review.</p>
+				  			</div>
+				   		<h3>Portolio Reviews</h3>
+				  			<div>
+				    			<p>Portfolio reviews are available on a limited basis. Please note, <b>On-campus portfolio reviews are not required for admission</b>. During the application season (December through March), portfolio review appointments are limited and scheduled for applicants only. Please plan accordingly.</p>
+				    			<p><b>REGISTER</b></p>
+				  			</div>
+				   		<h3>SVA Visit Days</h3>
+				  			<div>
+				    			<p><b>SVA VISIT DAY: SENIORS</b></p>
+				    			<p>Saturday, January 14, 2017<br>10:00am-4:00pm</p>
+				    			<p>Admissions offers high school seniors the opportunity to visit SVA on a Saturday prior to the freshman merit scholarship deadline of February 1st. Applicants can sign-up for portfolio reviews, meet with Admissions staff, hand-deliver application materials and take a campus tour.</p>
+				    			<p><i>This event has passed. Please consider joining us for a campus tour or an on-campus portfolio review.</i></p>
+				    			<br>
+				    			<p><b>SVA VISIT DAY: TRANSFERS</b></p>
+				    			<p>Friday, February 10, 2017<br>10:00am-6:00pm</p>
+				    			<p>Looking to transfer to SVA? Transfer applicants are invited to join us for this event devoted to the transfer application process. Our Manager of Transfer Admissions will conduct an information session at 10am and again at 4pm. While on campus, you’ll also have the opportunity to take a campus tour and meet one-on-one with an SVA representative to discuss transfer and portfolio requirements. Portfolio reviews are available by appointment only.</p>
+				    			<p><i>This event has passed. Please consider joining us for a campus tour or an on-campus portfolio review.</i></p>
+				    			<br>
+				    			<p><b>SVA VISIT DAY: JUNIORS</b></p>
+				    			<p>Tuesday, April 18, 2017<br>10:00am-4:00pm</p>
+				    			<p>High school juniors are invited to join us for campus tours and portfolio reviews. This is an excellent opportunity to receive portfolio feedback and application guidance prior to the summer break.</p>
+				    			<p><i>This event has passed. Please consider joining us for a campus tour or an on-campus portfolio review.</i></p>
+				  			</div>
+	  				</div>		
+  				<h2>OFF CAMPUS</h2>
+  					<div id="accordion-2" class='accordion-container'>
+						<h3>SVA Info Nights & Info Days</h3>
+							<div>
+								<p>Throughout the fall semester, SVA hosts regionally specific events as a means of bringing the school to interested applicants. Here students can learn more about our undergraduate programs, developing a portfolio, scholarship opportunities and the student experience. Admissions staff will be present throughout these events to review portfolios and provide feedback on works in progress.</p> 
+								<p>All undergraduate Open House events have passed. If you were unable to join us for an Open House, please consider joining us for a campus tour or an upcoming campus event.</p>
+				  			</div>
+				  		<h3>NPDA Portfolio Day Events</h3>
+				 			<div>
+				    			<p>SVA is an active participant in the Portfolio Days sponsored by the National Portfolio Day Association (NPDA). As a member of NPDA, representatives from SVA will join other National Association of Schools of Art and Design (NASAD) accredited colleges to review portfolios, offer helpful suggestions and provide information on specific programs and requirements. </p>
+				    			<p>The National Portfolio Day events for 2016-2017 are now live. You may RSVP at the link below. Come meet with a member of our Admissions team in a city near you.</p>
+				    			<p><b>SVA PORTFOLIO DAY EVENTS</b></p>
+				  			</div>
+	  				</div>	
+  			</div>
+  
+ 			<div id="tabs-2">
+ 				<div id="accordion-1" class="accordion-container">
+    				<h3>Campus Tours</h3>
+							<div>
+								<p>Undergraduate tours are offered on weekdays throughout the year and are primarily conducted by students. It is recommended that tours be scheduled at least two to four weeks in advance of the desired date. Tours are scheduled to view either the east or west side of campus. Housing tours are offered separately, Monday-Friday from 12pm-2pm. <i>All tours start within Admissions located at 209 East 23rd Street.</i></p>
+								<p><b>REGISTER</b></p>
+								<p>If you are a high school, college or portfolio prep program and wish to schedule a <b>group tour</b>, please email us at admissions@sva.edu.</p>
+								<p>Directions and Hotel Recommendations can be found here.</p>
+								<p>For information on Graduate Department tours, please click here.</p>
+				  			</div>
+				  	<h3>Information Sessions</h3>
+							<div>
+								<p>In the fall, each Graduate department hosts their own Information Session. These events provide prospective students with a unique opportunity to tour the facility and meet with the Chair, faculty, department staff, current students and alumni.</p>
+								<p><i>Please note that there are no sessions scheduled at this time. Prospective students are encouraged to contact the department directly for more information about other events and opportunities to visit throughout the year.</i></p>
+				  			</div>
+				  	<h3>NPDA Portfolio Day Events</h3>
+				 			<div>
+				    			<p>SVA is an active participant in the Portfolio Days sponsored by the National Portfolio Day Association (NPDA). As a member of NPDA, representatives from SVA will join other National Association of Schools of Art and Design (NASAD) accredited colleges to review portfolios, offer helpful suggestions and provide information on specific programs and requirements. </p>
+				    			<p>The National Portfolio Day events for 2016-2017 are now live. You may RSVP at the link below. Come meet with a member of our Admissions team in a city near you.</p>
+				    			<p><b>SVA PORTFOLIO DAY EVENTS</b></p>
+				    			<p>On three dates in the fall, there are Graduate Portfolio Days hosted by the National Portfolio Day Association (NPDA). These events are geared towards individuals that have already completed a Bachelor’s degree program and are looking to further their education at the graduate level.</p>
+				    			<p>All Graduate Portfolio Day events have passed. If you were unable to attend, please consider contacting a graduate department directly to find out about other opportunities to visit the campus throughout the year.</p>
+				  			</div>
+				  	<h3>Open Houses</h3>
+				  			<div>
+				    			<p>In the fall, prospective graduate students have the unique opportunity to attend an Info Session to tour the department facilities and meet with the Chair, faculty, department staff, current students and alumni. Please click here to view a full list of upcoming events!</p>
+				  			</div>
+				  	<h3>SVA Portfolio Days</h3>
+				  			<div>
+				   				<p>SVA Portfolio Days are unique, on-campus events devoted to portfolio development. Prospective undergraduate students will have the opportunity to view a special presentation on Portfolio Development and meet with an admissions representative for a one-on-one portfolio interview. During our presentation, we will give you tips and show you examples of how to best prepare your portfolio for admission and merit scholarship consideration. The portfolio review is optional, but is a great opportunity to show us your sketchbooks and works in progress to get personalized feedback as you prepare your portfolio and application. <b>Campus tours will not be available on SVA Portfolio Days.</b></p>
+				   				<p><i>Prospective students who attend an SVA Portfolio Day event will receive an application fee waiver if they apply for Early Action by December 1st.</i></p>
+				   				<p>All SVA Portfolio Day events have passed. If you were unable to join us, please consider joining us for an on-campus portfolio review.</p>
+				  			</div>
+    			</div>
+    		</div>
+ 			
+ 			<div id="tabs-3">
+ 				<div id="accordion-1" class="accordion-container">
+ 					<h3>Argentina</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>Brazil</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>China</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>Colombia</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>Ecuador</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>India</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>Japan</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>Mexico</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>Peru</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>
+				  	<h3>South Korea</h3>
+							<div>
+								<p>SVA will be visiting in October 2016 & March 2017.<br>
+								Please email Daniela Novaes for info: dnovaes@sva.edu</p>
+				  			</div>										
+			    </div>
+			</div>
+	</div>
+
+	<div id="imagesContainer">
+		<div class="image"><img src="imgs/image1.jpg"></div>
+		<div class="image"><img src="imgs/image2.jpg"></div>
+	</div>
+</body>
+
+</html>
